@@ -7,13 +7,236 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="田中(個人開発)"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="385dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tuuchi"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="通知の管理" />
+
+                <Button
+                    android:id="@+id/screenTime"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="スクリーンタイム" />
+                <Button
+                    android:id="@+id/yotei"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="予定" />
+                <Button
+                    android:id="@+id/todo"
+                    android:layout_width="120dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="20dp"
+                    android:text="TO DO リスト" />
+            </LinearLayout>
+    </HorizontalScrollView>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="9/5"
+                android:textAlignment="center"
+                android:textSize="34sp" />
+
+            <EditText
+                android:id="@+id/time0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:ems="10"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/time1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="01:00"
+                android:ems="10"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/time3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="03:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="04:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="05:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="06:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="07:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="08:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="09:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="14:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="15:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="16:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="17:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="20:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="21:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="22:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23:00"
+                android:ems="10"
+                android:inputType="time" />
+            <EditText
+                android:id="@+id/time24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24:00"
+                android:ems="10"
+                android:inputType="time" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
