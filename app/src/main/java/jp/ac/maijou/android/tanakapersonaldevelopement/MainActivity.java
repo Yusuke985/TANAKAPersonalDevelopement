@@ -1,5 +1,6 @@
 package jp.ac.maijou.android.tanakapersonaldevelopement;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -23,5 +24,23 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        binding.yotei.setOnClickListener(v ->{
+                var intent = new Intent(this,calender.class);
+                startActivity(intent);
+        });
+        binding.todo.setOnClickListener(v ->{
+            var intent = new Intent(this,ToDoAdd.class);
+            startActivity(intent);
+        });
+        binding.screenTime.setOnClickListener(v ->{
+            var intent = new Intent(this,calender.class);
+            startActivity(intent);
+        });
+        binding.tuuchi.setOnClickListener(v ->{
+            var intent = new Intent(this,NoticeSetting.class);
+            startActivity(intent);
+        });
+
+
     }
 }
