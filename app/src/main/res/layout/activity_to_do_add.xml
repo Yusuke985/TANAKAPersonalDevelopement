@@ -66,4 +66,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
 
+    <LinearLayout
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tuuchi"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="通知の管理" />
+
+        <Button
+            android:id="@+id/screenTime"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="スクリーンタイム" />
+        <Button
+            android:id="@+id/yotei"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="予定" />
+        <Button
+            android:id="@+id/todo"
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:text="TO DO リスト" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
