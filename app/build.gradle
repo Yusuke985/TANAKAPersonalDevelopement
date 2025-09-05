@@ -23,13 +23,18 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    viewBinding {
+        enabled = true
+    }
+
 }
 
 dependencies {
-
+    coreLibraryDesugaring libs.desuger.jdk.libs
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
