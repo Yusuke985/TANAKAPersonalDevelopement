@@ -81,6 +81,13 @@
                 android:text="01:00"
                 android:ems="10"
                 android:inputType="time" />
+            <EditText
+                android:id="@+id/time2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="02:00"
+                android:ems="10"
+                android:inputType="time" />
 
             <EditText
                 android:id="@+id/time3"
@@ -229,13 +236,7 @@
                 android:text="23:00"
                 android:ems="10"
                 android:inputType="time" />
-            <EditText
-                android:id="@+id/time24"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="24:00"
-                android:ems="10"
-                android:inputType="time" />
+
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
